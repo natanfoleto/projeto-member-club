@@ -2,7 +2,7 @@
   width: 7.25rem;
 }
 
-header {
+#header-main {
   display: flex;
   flex-direction: column;
   align-items: center;
