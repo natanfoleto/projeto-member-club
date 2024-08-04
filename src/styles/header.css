@@ -1,0 +1,61 @@
+#logo {
+  width: 7.25rem;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-block: 4rem;
+
+  & form {
+    margin-top: 2rem;
+
+    position: relative;
+
+    & input {
+      width: 25rem;
+      height: 3.5rem;
+      font: var(--text-md);
+      color: var(--gray-500);
+      background-color: var(--gray-300);
+      border: 1px solid var(--gray-400);
+      border-radius: 0.75rem;
+      padding: 1rem;
+
+      &:focus {
+        outline: 1px solid var(--pink);
+      }
+
+      &:not(:placeholder-shown) {
+        color: var(--gray-700);
+      }
+    }
+
+    & button {
+      position: absolute;
+      background: url(../assets/icons/button.svg) center;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      border: 0;
+      cursor: pointer;
+
+      right: 0.5rem;
+      top: 0.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+
+      &:hover {
+        background: url(../assets/icons/button-hover.svg) center;
+      }
+
+      &:disabled {
+        background: url(../assets/icons/button-disabled.svg) center;
+      }
+    }
+  }
+}
+
+

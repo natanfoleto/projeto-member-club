@@ -38,8 +38,14 @@ body {
   font: var(--text-md);
   color: var(--gray-700);
   background-color: var(--gray-200);
+  
+  height: 100vh;
 }
 
 img {
   max-width: 100%;
+}
+
+#app {
+  margin: 0 auto;
 }
