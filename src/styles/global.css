@@ -5,7 +5,7 @@
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 0.375rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -30,11 +30,11 @@
   --white: #ffffff;
 
   --gradient-base: linear-gradient(
-    90deg, 
-    #2DAA6E 0%, 
-    #2DAAAA 33.33%, 
-    #856CCF 66.67%, 
-    #D658B3 100%
+    90deg,
+    #2DAA6E 0%,
+    #2DAAAA 33.33%,
+    #856CCF 66.67%,
+    #D658B3 100%
   );
 
   --font-family: 'Oxygen', sans-serif;
@@ -57,6 +57,11 @@ body {
 
 main {
   display: flex;
+  gap: 1.5rem;
   margin-inline: auto;
   max-width: 912px;
+}
+
+ul {
+  list-style: none;
 }

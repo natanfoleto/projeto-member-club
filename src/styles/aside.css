@@ -2,7 +2,7 @@ aside {
   min-width: 20rem;
 }
 
-#header-profile {
+#header-secondary {
   background-color: var(--gray-100);
   border: 1px solid var(--gray-300);
   border-radius: 1rem;
@@ -11,6 +11,19 @@ aside {
   display: flex;
   align-items: center;
   gap: 1rem;
+
+  & .avatar {
+    display: flex;
+    padding: 2px;
+    border-radius: 0.625rem;
+    background: linear-gradient(
+      90deg,
+      #2DAA6E 0%,
+      #2DAAAA 33.33%,
+      #856CCF 66.67%,
+      #D658B3 100%
+    );
+  }
 
   & div h1 {
     font: var(--title-sm);
@@ -31,7 +44,7 @@ aside {
   padding: 1.75rem 0.5rem 1rem 1.5rem;
   
   & .scrollable {
-    max-height: 22.5rem;
+    max-height: 20rem;
     overflow-y: auto;
     padding-right: 0.875rem;
 
@@ -55,7 +68,6 @@ aside {
 
     & ul {
       width: 100%;
-      list-style: none;
 
       & li {
         display: flex;
