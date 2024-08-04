@@ -1,0 +1,16 @@
+{
+  "name": "member-club",
+  "description": "Aplicação Web de cartão de fidelidade do cliente.",
+  "author": "Natan Foleto",
+  "scripts": {
+    "server": "json-server --watch server.json --port 3333",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.21"
+  },
+  "devDependencies": {
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
