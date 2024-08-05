@@ -7,6 +7,5 @@ import "./styles/aside.css"
 import "./styles/section.css"
 
 // JS
-import "./modules/page-load.js"
 import "./modules/form/submit.js"
 import "./modules/form/input-change.js"
