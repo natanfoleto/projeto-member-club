@@ -17,22 +17,22 @@
     <img id="logo" src="src/assets/Logo.png" alt="Logo">
 
     <form>
-      <input type="text" id="card-id" name="card-id" placeholder="ID do cartão">
+      <input type="text" id="client-id" name="client-id" placeholder="ID do cartão" maxlength="15">
 
       <button id="search" type="submit" disabled></button>
     </form>
   </header>
 
-  <main>
+  <main class="hiden">
     <aside>
       <header id="header-secondary">
         <div class="avatar">
-          <img src="src/assets/Picture.png" alt="Natália Miranda">
+          <img id="client-avatar" src="src/assets/profiles/124-537-835-230.png" alt="Natália Miranda">
         </div>
 
         <div>
-          <h1>Natália Miranda</h1>
-          <p>Cliente desde 18/09/2023</p>
+          <h1 id="client-name">Natália Miranda</h1>
+          <p id="client-since">Cliente desde 18/09/2023</p>
         </div>
       </header>
 
@@ -40,81 +40,18 @@
         <div class="scrollable">
           <div class="info-history">
             <span>histórico</span>
-            <span>7 cortes</span>
+            <span id="client-cuts">7 cortes</span>
           </div>
 
-          <ul>
-            <li>
+          <ul id="appointment-history">
+            <!-- <li>
               <div class="info-datetime">
                 <span>29/04/2024</span>
                 <time>17:00</time>
               </div>
 
               <img src="src/assets/icons/pin-check.svg" alt="pin-check">
-            </li>
-
-            <li>
-              <div class="info-datetime">
-                <span>29/04/2024</span>
-                <time>17:00</time>
-              </div>
-
-              <img src="src/assets/icons/pin-check.svg" alt="pin-check">
-            </li>
-
-            <li>
-              <div class="info-datetime">
-                <span>29/04/2024</span>
-                <time>17:00</time>
-              </div>
-
-              <img src="src/assets/icons/pin-check.svg" alt="pin-check">
-            </li>
-
-            <li>
-              <div class="info-datetime">
-                <span>29/04/2024</span>
-                <time>17:00</time>
-              </div>
-
-              <img src="src/assets/icons/pin-check.svg" alt="pin-check">
-            </li>
-
-            <li>
-              <div class="info-datetime">
-                <span>29/04/2024</span>
-                <time>17:00</time>
-              </div>
-
-              <img src="src/assets/icons/pin-check.svg" alt="pin-check">
-            </li>
-
-            <li>
-              <div class="info-datetime">
-                <span>29/04/2024</span>
-                <time>17:00</time>
-              </div>
-
-              <img src="src/assets/icons/pin-check.svg" alt="pin-check">
-            </li>
-
-            <li>
-              <div class="info-datetime">
-                <span>29/04/2024</span>
-                <time>17:00</time>
-              </div>
-
-              <img src="src/assets/icons/pin-check.svg" alt="pin-check">
-            </li>
-
-            <li>
-              <div class="info-datetime">
-                <span>29/04/2024</span>
-                <time>17:00</time>
-              </div>
-
-              <img src="src/assets/icons/pin-check.svg" alt="pin-check">
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -128,59 +65,32 @@
             <p>Ao fazer cortes de cabelo, o décimo sai de graça!</p>
           </div>
 
-          <span>
+          <span id="card-id">
             ID: 124-537-835-230
           </span>
         </header>
 
-        <ul>
+        <ul id="loyalty-card">
           <li>
-            <img src="src/assets/PinCheck.png" alt="PinCheck">
+            <img src="src/assets/PinCheck.png" alt="Corte feito">
           </li>
 
           <li>
-            <img src="src/assets/PinCheck.png" alt="PinCheck">
-          </li>
-
-          <li>
-            <img src="src/assets/PinCheck.png" alt="PinCheck">
-          </li>
-
-          <li>
-            <img src="src/assets/PinCheck.png" alt="PinCheck">
-          </li>
-
-          <li>
-            <img src="src/assets/PinCheck.png" alt="PinCheck">
-          </li>
-
-          <li>
-            <img src="src/assets/PinCheck.png" alt="PinCheck">
-          </li>
-
-          <li>
-            <img src="src/assets/PinCheck.png" alt="PinCheck">
-          </li>
-
-          <li></li>
-          <li></li>
-
-          <li>
-            <img src="src/assets/icons/pin-gift.svg" alt="pin-gift">
+            <img src="src/assets/icons/pin-gift.svg" alt="Presente final">
           </li>
         </ul>
       </div>
 
       <footer>
         <div class="remaining-cuts">
-          <span><strong>3</strong> cortes restantes</span>
+          <span><strong id="cuts-remaining-length">3</strong> cortes restantes</span>
 
           <div>
             <div class="progress-bar">
               <div class="progress-track"></div>
             </div>
 
-            <span>7 de 10</span>
+            <span id="progress-number">7 de 10</span>
           </div>
         </div>
 
