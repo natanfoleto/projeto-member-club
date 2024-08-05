@@ -97,6 +97,10 @@ export function clientsShow({ client }) {
     const percent = (totalCuts / cutsNeeded) * 100
     progressTrack.style.width = `${percent}%`
 
+    if (cutsNeeded - 1 === totalCuts) {
+      alert("Parabéns! Seu próximo corte é gratuito!")
+    }
+
     // Exibe o main
     main.classList.remove("hiden")
   } catch (error) {
